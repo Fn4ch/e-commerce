@@ -1,5 +1,6 @@
 # E-commerce 
-Project made with next.js
+
+simple e-commerce project created with next.js
 
 ## How to use
 
