@@ -12,6 +12,12 @@ export default function Page() {
         </a>
         .
       </p>
+      <Box width='lg' display='flex'>
+            <Typography variant='h3'>{title}</Typography>
+            <Image src={image} height={500} width={800}></Image>
+            <Typography variant='h4' sx={{my:3}}>Описание</Typography>
+            <Typography variant='h5' sx={{}}>{description}</Typography>
+        </Box>
     </Layout>
   )
 }

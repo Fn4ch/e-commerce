@@ -11,7 +11,7 @@ export default function Layout({ children }: Props) {
     <>
       <Header />      
       <main>
-        <Container sx={{justifyContent: 'center', width: 'lg',border : 'dashed', borderColor: 'blue'}}>
+        <Container sx={{justifyContent: 'center', mt: '65px'}}>
           {children}
         </Container>
       </main>

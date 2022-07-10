@@ -19,26 +19,25 @@ export default function Navbar() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>   
-          <Box sx={{flexGrow: 1}}>
-            <Link href='/' className='link'>Доставка еды</Link> 
+    <Box className={styles.header} sx={{ flexGrow: 1 }}>
+      <AppBar position="fixed" color='transparent' sx={{boxShadow: 0, backdropFilter: 'blur(8px)'}}>
+        <Toolbar sx={{mx:1, height: 60}}>   
+          <Box sx={{flexGrow: 1}} display='flex' alignItems='center' flexDirection='row'>
+            <Link href='/'><Typography mr={3} variant='h5'>Eshop</Typography></Link>
+            <Link href='/products'><Typography mr={3} variant='h5'>products</Typography></Link>            
           </Box>
           {
           status === 'authenticated' ? 
           <IconButton
             aria-label="menu"
-            sx={{ ml: 2 }}
             onClick={toggleDrawer(true)}
             color='inherit'
           >         
-          <Menu fontSize='large' />             
+          <Menu fontSize='large'/>             
           </IconButton>
           : 
           <Button color='inherit' onClick={()=>signIn()}>Sign In</Button>
-          }        
-
+          }    
         </Toolbar>
       </AppBar>      
 

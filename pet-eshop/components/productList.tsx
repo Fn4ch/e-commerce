@@ -11,7 +11,7 @@ interface ProductListProps{
 const ProductList: React.FC<ProductListProps> = ({products}) =>{
 
   return(
-    <Grid container>
+    <Grid container spacing={2} justifyContent='center'>
           {products.map(product => 
             <ProductItem
               key={product.id}

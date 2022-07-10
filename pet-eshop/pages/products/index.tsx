@@ -1,7 +1,7 @@
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
 import { GetServerSideProps, GetStaticProps } from "next"
-import ProductList from "../components/productList"
-import { IProduct } from "../types/IProduct"
+import ProductList from "../../components/productList"
+import { IProduct } from "../../types/IProduct"
 import axios from "axios" 
 
 

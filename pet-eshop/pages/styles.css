@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
-.link{
+.nextLink{
     text-decoration: none;
+}
+.nextImage{
+    box-shadow: 40;
 }
