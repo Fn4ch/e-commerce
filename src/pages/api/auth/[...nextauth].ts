@@ -10,12 +10,8 @@ export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET
-  }),
-  YandexProvider({
-    clientId: process.env.YANDEX_CLIENT_ID,
-    clientSecret: process.env.YANDEX_CLIENT_SECRET
+      clientId: 'b9dfc33dbf5b91f87eb0',
+      clientSecret: 'dcdb5a6e07599f45a34a545b32e07594042e40aa'
   })
   ],
   theme: {
